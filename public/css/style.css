@@ -1,0 +1,10 @@
+@font-face {
+    font-family: JetBrains;
+    src: url(JetBrains.ttf)
+}
+
+* {
+    font-family: JetBrains;
+    margin: 0px;
+    padding: 0px;
+}
