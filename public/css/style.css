@@ -14,7 +14,7 @@ body {
 }
 
 a {
-    color: yellow;
+    color: #F1D401;
     text-decoration: none;
 }
 
@@ -27,7 +27,7 @@ a:hover {
 }
 
 .yellow {
-    color: yellow;
+    color: #F1D401;
 }
 
 .center {
@@ -101,9 +101,12 @@ a:hover {
 } */
 
 img {
-    width: 200px;
-    height: 175px;
-    border: solid 15px yellow;
+    width: 18vw;
+    height: 40vh;
+    border-top: groove 60px #2D4882;
+    border-bottom: ridge 60px #2D4882;
+    border-left: dotted 45px #F5D203;
+    border-right: groove 60px #2D4882;
 }
 
 #navbartransition {transition-timing-function: ease-out;}
