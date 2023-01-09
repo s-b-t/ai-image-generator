@@ -9,8 +9,91 @@
     padding: 0px;
 }
 
-body {
-    background-color: #454545;
+.banner {
+    /* background-color: #454545; */
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to top, white 0.1%, transparent 60%), url(../images/space-bg2.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.banner .clouds {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.banner .clouds img {
+    position: absolute;
+    bottom: 0;
+    max-width: 100%;
+    animation: animate calc(25s * var(--i)) linear infinite;
+}
+
+@keyframes animate
+{
+    0%
+    {
+        transform: translateX(-100%);
+    }
+    100%
+    {
+        transform: translateX(100%);
+    }
+}
+
+.space-robot-img1 {
+    width: 20vw;
+    height: 55vh;
+    border-left: dotted 45px #E0C61F;
+    border-bottom: dotted 45px #8B7C13;
+}
+
+.space-robot-img2 {
+    width: 20vw;
+    height: 55vh;
+    border-right: dotted 45px #CE3A18;
+    border-bottom: dotted 45px #79220E;
+}
+
+.leftside {
+    flex-direction: column;
+}
+
+.rightside {
+    flex-direction: column;
+}
+
+.w-50 {
+    width: 50%;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+.m-5 {
+    margin: 5vw;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.navbarcontainer {
+    margin-top: 5vw;
+    width: 100%;
 }
 
 a {
@@ -30,36 +113,18 @@ a:hover {
     color: #F1D401;
 }
 
-.center {
-    display: flex;
-    justify-content: center;
-}
-
-.spacebetween {
-    display: flex;
-    justify-content: space-between;
-}
-
-.topcontentcontainer {
-    width: 100%
-}
-
-.navbarcontainer {
-    width: 100%;
-}
-
 .navbar1 {
     background-color: black;
     display: flex;
     padding-left: 30px;
     padding-top: 20px;
     padding-bottom: 20px;
-    width: 40%;
+    width: 50%;
     transition: width .5s;
 }
 
 .navbar1:hover {
-    width: 75%;
+    width: 60%;
 }
 
 .navbar2 {
@@ -72,7 +137,7 @@ a:hover {
 }
 
 .navbar2:hover {
-    width: 75%;
+    width: 60%;
 }
 
 .navbar3 {
@@ -80,46 +145,24 @@ a:hover {
     padding-left: 90px;
     padding-top: 20px;
     padding-bottom: 20px;
-    width: 60%;
+    width: 50%;
     transition: width .5s;
 }
 
 .navbar3:hover {
-    width: 75%;
-}
-
-.imgcontainer {
-    width: 25%;
-    padding-right: 90px;
-    padding-top: 20px;
-}
-
-/* .eye {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-} */
-
-img {
-    width: 18vw;
-    height: 40vh;
-    border-top: groove 60px #2D4882;
-    border-bottom: ridge 60px #2D4882;
-    border-left: dotted 45px #F5D203;
-    border-right: groove 60px #2D4882;
+    width: 60%;
 }
 
 #navbartransition {transition-timing-function: ease-out;}
 
-.content {
-    background-color: #2E2E2E;
-    margin-left: 300px;
-    margin-right: 300px;
-    margin-top: 100px;
-    margin-bottom: 100px;
+
+section {
+    position: relative;
+    padding: 75px 100px;
 }
 
-.contentformat {
-    padding: 30px;
+section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
 }
 
