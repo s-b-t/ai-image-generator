@@ -92,12 +92,12 @@
 }
 
 a {
-    color: #F1D401;
+    color: yellow;
     text-decoration: none;
 }
 
 a:hover {
-    color: gray;
+    color: #E0C61F;
 }
 
 .white {
@@ -105,7 +105,7 @@ a:hover {
 }
 
 .yellow {
-    color: #F1D401;
+    color: yellow;
 }
 
 .navbarcontainer {
@@ -114,8 +114,8 @@ a:hover {
 }
 
 .navbar1 {
-    background-color: #171717;
-    padding-left: 60px;
+    background-color: #042E4B;
+    padding-left: 30px;
     padding-top: 20px;
     padding-bottom: 20px;
     width: 30%;
@@ -123,20 +123,20 @@ a:hover {
 }
 
 .navbar1:hover {
-    width: 40%;
+    width: 35%;
 }
 
 .navbar2 {
-    background-color: #2E2E2E;
-    padding-left: 90px;
+    background-color: #054B73;
+    padding-left: 60px;
     padding-top: 20px;
     padding-bottom: 20px;
-    width: 45%;
+    width: 55%;
     transition: width .5s;
 }
 
 .navbar2:hover {
-    width: 50%;
+    width: 60%;
 }
 
 #navbartransition {transition-timing-function: ease-out;}
