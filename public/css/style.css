@@ -144,10 +144,57 @@ a:hover {
 section {
     position: relative;
     padding: 75px 100px;
+    /* background: linear-gradient(to bottom, transparent 100%, #054B73 10%) */
 }
 
 section h2 {
     font-size: 2.5em;
     margin-bottom: 20px;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.mt-2 {
+    margin-top: 2vw;
+}
+
+.mb-2 {
+    margin-bottom: 2vw;
+}
+
+.mb-5px {
+    margin-bottom: 5px;
+}
+
+.p-75px {
+    padding: 75px;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.formcontainer {
+    background-color: #054B73;
+    height: 50vh;
+    width: 100%;
+    padding-top: 75px;
+}
+
+.bg-blue {
+    background-color: #042E4B;
+}
+
+.formbox {
+    margin-left: 250px;
+    margin-right: 250px;
+    margin-bottom: 75px;
+    border: solid yellow 2px;
 }
 
