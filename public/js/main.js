@@ -5,7 +5,7 @@ function onSubmit(e) {
     e.preventDefault();
 
     // Upon submitting, clear the message and the image
-    document.querySelector('#message').textContext = '';
+    document.querySelector('#err-message').textContext = '';
     document.querySelector('#image').src = '';
 
     const prompt = document.querySelector('#prompt').value;
@@ -20,6 +20,8 @@ function onSubmit(e) {
     console.log(prompt, size);
     
     generateImageRequest(prompt, size);
+
+    console.log(prompt, size);
 }
 
 async function generateImageRequest(prompt, size) {
@@ -54,7 +56,7 @@ async function generateImageRequest(prompt, size) {
         removeSpinner();
 
     } catch (error) {
-        document.querySelector('#message').textContext = error;
+        document.querySelector('#err-message').textContext = error;
     }
 }
 

@@ -10,7 +10,6 @@
     <link rel="icon" type="image/x-icon" href="B33FWARE-3.ico">
     <script src="js/main.js" defer></script>
 </head>
-
 <body>
     <div class="banner">
         <div class="clouds">
@@ -50,7 +49,7 @@
     </section>
     <div class="formcontainer">
         <div class="center bg-blue formbox">
-            <form action="" method="post">
+            <form id="image-form">
                 <div class="mb-5px mt-2">
                     <label class="white" for="prompt" id="prompt">Prompt</label>
                 </div>
@@ -60,9 +59,9 @@
                 <div class="mb-2">
                     <label class="white" for="size" id="size">Size</label>
                     <select name="size" id="size">
-                        <option value="1">Small</option>
-                        <option value="2">Medium</option>
-                        <option value="3">Large</option>
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
                     </select>    
                 </div>
                 <div class="mb-2">
@@ -71,5 +70,12 @@
             </form>
         </div>
     </div>
+    <section class="generated-image bg-blue">
+        <div class="image-container">
+            <h2 id="err-message"></h2>
+            <img src="" alt="" id="image">
+        </div>
+        <div class="spinner"></div>
+    </section>
 </body>
 </html>
