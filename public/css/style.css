@@ -230,6 +230,7 @@ textarea:hover {
 textarea:focus {
     outline: none;
     box-shadow: -20px 5px 0 #054B73, 20px -5px 0 #054B73;
+    /* box-shadow: -20px 5px 0 #8B7C13, 20px -5px 0 #8B7C13; */
     background: #042E4B;
     border: solid yellow 2px;
     border-left: dotted yellow 2px;
