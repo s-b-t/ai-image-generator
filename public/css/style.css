@@ -55,15 +55,15 @@ body {
 }
 
 .space-robot-img1 {
-    width: 20vw;
-    height: 55vh;
+    width: 240px;
+    height: 330px;
     border-left: dotted 45px #E0C61F;
     border-bottom: dotted 45px #8B7C13;
 }
 
 .space-robot-img2 {
-    width: 20vw;
-    height: 55vh;
+    width: 240px;
+    height: 330px;
     border-right: dotted 45px #CE3A18;
     border-bottom: dotted 45px #79220E;
 }
