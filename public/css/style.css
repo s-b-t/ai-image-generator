@@ -210,22 +210,26 @@ textarea {
     font-size: 12pt;
     color: yellow;
     border: 2px solid black;
-    box-shadow: 2px 2px 0 white,
+    /* box-shadow: 2px 2px 0 white,
         -2px -2px 0 white,
         -2px 2px 0 white,
-        2px -2px 0 white;
-    transition: 500ms ease-in-out;
+        2px -2px 0 white; */
+    box-shadow: -2px -2px 0 white,
+        2px 2px 0 white,
+        2px -2px 0 white,
+        -2px 2px 0 white;
+    transition: 250ms ease-in-out;
 }
 
 textarea:hover {
-    box-shadow: 20px 5px 0 #054B73, -20px -5px 0 #054B73;
+    box-shadow: -20px 5px 0 #054B73, 20px -5px 0 #054B73;
     background: #042E4B;
     border: solid yellow 2px;
 }
 
 textarea:focus {
     outline: none;
-    box-shadow: 20px 5px 0 #054B73, -20px -5px 0 #054B73;
+    box-shadow: -20px 5px 0 #054B73, 20px -5px 0 #054B73;
     background: #042E4B;
     border: solid yellow 2px;
     border-left: dotted yellow 2px;
@@ -255,7 +259,7 @@ button {
         -2px -2px 0 white,
         -2px 2px 0 white,
         2px -2px 0 white;
-    transition: 500ms ease-in-out;
+    transition: 250ms ease-in-out;
 }
 
 button:hover {
