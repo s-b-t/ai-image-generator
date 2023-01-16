@@ -10,7 +10,15 @@
     <link rel="stylesheet" href="css/selectbox.css">
     <link rel="icon" type="image/x-icon" href="B33FWARE-3.ico">
     <script src="js/main.js" defer></script>
-    <script src="js/selectbox.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(window).scroll(function(){
+            var scroll = $(window).scrollTop();
+            $(".banner").css({
+                width: (100 + scroll/7.5) + "%"
+            })
+        });
+    </script>
 </head>
 <body>
     <div class="banner">

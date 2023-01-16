@@ -6,7 +6,7 @@
 *,
 *:before,
 *:after {
-    font-family: JetBrains;
+    font-family: JetBrains, Verdana, Geneva, Tahoma, sans-serif, 'Courier New', Courier, monospace;
     margin: 0px;
     padding: 0px;
     /* border: solid black 1px; */
@@ -26,13 +26,16 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
 }
 
 .banner .clouds {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100vw;
+    width: 150vw;
     height: 100vh;
     overflow: hidden;
 }
@@ -41,7 +44,7 @@ body {
     position: absolute;
     bottom: 0;
     max-width: 100vw;
-    animation: animate calc(20s * var(--i)) linear infinite;
+    animation: animate calc(15s * var(--i)) linear infinite;
 }
 
 @keyframes animate {
