@@ -27,8 +27,8 @@ body {
     background-repeat: no-repeat;
     background-position: bottom;
     top: 0;
-    left: 50%;
-    transform: translate(-50%);
+    left: 25%;
+    transform: translate(-25%);
 }
 
 .banner .clouds {
