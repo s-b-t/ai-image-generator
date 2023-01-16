@@ -41,7 +41,7 @@ body {
     position: absolute;
     bottom: 0;
     max-width: 100vw;
-    animation: animate calc(25s * var(--i)) linear infinite;
+    animation: animate calc(20s * var(--i)) linear infinite;
 }
 
 @keyframes animate {

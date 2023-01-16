@@ -74,13 +74,13 @@ document.querySelector('#image-form').addEventListener('submit', onSubmit);
 // Allows scroll-position of page to be saved upon page refresh
 // using Session Storage
 document.addEventListener("DOMContentLoaded", function (event) {
-    var scrollpos = sessionStorage.getItem('scrollpos');
-    if (scrollpos) {
-        window.scrollTo(0, scrollpos);
-        sessionStorage.removeItem('scrollpos');
+    var scrollPosition = sessionStorage.getItem('scrollPosition');
+    if (scrollPosition) {
+        window.scrollTo(0, scrollPosition);
+        sessionStorage.removeItem('scrollPosition');
     }
 });
 
 window.addEventListener("beforeunload", function (e) {
-    sessionStorage.setItem('scrollpos', window.scrollY);
+    sessionStorage.setItem('scrollPosition', window.scrollY);
 });
