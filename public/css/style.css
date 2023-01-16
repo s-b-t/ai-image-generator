@@ -185,6 +185,7 @@ section h2 {
     height: 50vh;
     width: 100vw;
     padding-top: 75px;
+    padding-bottom: 50px;
 }
 
 .bg-blue {
@@ -194,8 +195,11 @@ section h2 {
 .formbox {
     margin-left: 250px;
     margin-right: 250px;
-    margin-bottom: 75px;
     border: solid yellow 2px;
+}
+
+textarea {
+    resize: none;
 }
 
 /* .noselect {
