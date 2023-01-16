@@ -185,7 +185,7 @@ section h2 {
     height: 50vh;
     width: 100vw;
     padding-top: 75px;
-    padding-bottom: 50px;
+    padding-bottom: 75px;
 }
 
 .bg-blue {
@@ -198,8 +198,38 @@ section h2 {
     border: solid yellow 2px;
 }
 
+::placeholder {
+    color: white;
+    font-style: italic;
+}
+
 textarea {
     resize: none;
+    padding: 15px;
+    background-color: #054B73;
+    font-size: 12pt;
+    color: yellow;
+    border: 2px solid black;
+    box-shadow: 2px 2px 0 white,
+        -2px -2px 0 white,
+        -2px 2px 0 white,
+        2px -2px 0 white;
+    transition: 500ms ease-in-out;
+}
+
+textarea:hover {
+    box-shadow: 20px 5px 0 #054B73, -20px -5px 0 #054B73;
+    background: #042E4B;
+    border: solid yellow 2px;
+}
+
+textarea:focus {
+    outline: none;
+    box-shadow: 20px 5px 0 #054B73, -20px -5px 0 #054B73;
+    background: #042E4B;
+    border: solid yellow 2px;
+    border-left: dotted yellow 2px;
+    border-bottom: dotted yellow 2px;
 }
 
 /* .noselect {
