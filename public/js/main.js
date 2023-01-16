@@ -18,7 +18,7 @@ function onSubmit(e) {
     }
 
     console.log(prompt, size);
-    
+
     generateImageRequest(prompt, size);
 
     console.log(prompt, size);
@@ -69,3 +69,18 @@ function removeSpinner() {
 }
 
 document.querySelector('#image-form').addEventListener('submit', onSubmit);
+
+
+// Allows scroll-position of page to be saved upon page refresh
+// using Session Storage
+document.addEventListener("DOMContentLoaded", function (event) {
+    var scrollpos = sessionStorage.getItem('scrollpos');
+    if (scrollpos) {
+        window.scrollTo(0, scrollpos);
+        sessionStorage.removeItem('scrollpos');
+    }
+});
+
+window.addEventListener("beforeunload", function (e) {
+    sessionStorage.setItem('scrollpos', window.scrollY);
+});

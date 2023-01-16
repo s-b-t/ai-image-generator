@@ -9,6 +9,12 @@
     font-family: JetBrains;
     margin: 0px;
     padding: 0px;
+    /* border: solid black 1px; */
+}
+
+body {
+    width: 100vw;
+    overflow-x: hidden;
 }
 
 .banner {
@@ -118,7 +124,7 @@ a:hover {
     padding-left: 30px;
     padding-top: 20px;
     padding-bottom: 20px;
-    width: 30%;
+    width: 30vw;
     transition: width .5s;
 }
 
@@ -152,14 +158,6 @@ section {
 section h2 {
     font-size: 2.5em;
     margin-bottom: 20px;
-}
-
-.italic {
-    font-style: italic;
-}
-
-.bold {
-    font-weight: bold;
 }
 
 .mt-2 {
@@ -201,13 +199,13 @@ section h2 {
 }
 
 /* .noselect {
-    -webkit-touch-callout: none;
-      -webkit-user-select: none;
-       -khtml-user-select: none;
-         -moz-user-select: none;
-          -ms-user-select: none;
-              user-select: none;
-          -webkit-tap-highlight-color: transparent;
+-webkit-touch-callout: none;
+-webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+    user-select: none;
+-webkit-tap-highlight-color: transparent;
 } */
 
 button {
@@ -237,12 +235,11 @@ button:focus {
 
 /* Generated Image Properties */
 
-section .generated-image {
-    background-color: #054B73;
+/* section .generated-image {
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     padding-top: 75px;
-}
+} */
 
 .image-container {
     margin-left: 250px;
