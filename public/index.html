@@ -7,7 +7,6 @@
     <title>B33FWare Image Generator</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/spinner.css">
-    <link rel="stylesheet" href="css/selectbox.css">
     <link rel="icon" type="image/x-icon" href="B33FWARE-3.ico">
     <script src="js/main.js" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -50,41 +49,41 @@
             <h2 class="white">Powered by <a href="https://openai.com/" target="_blank">OpenAI</a>-<a href="https://openai.com/dall-e-2/" target="_blank">DALL•E 2</a> and <a href="https://nodejs.org/en/" target="_blank">Node.js</a></h2>
         </div>
     </div>
-    <section>
+    <section class="info">
         <h2>Down to Business...</h2>
         <p>You've made it to the B33FWare Image Generator BETA. To get started, simply type anything you want in the prompt input, pick which size you'd like and hit 'Generate Image'. Being descriptive with specifically nouns and/or verbs is the key!</p> 
         <div class="mt-2">
             <p><b>Example:</b> <mark><i>"3D Robot Face, Shiny, Metallic, Red Eyes"</i></mark> or <mark><i>"panda bear eating tacos"</i></mark>... It can be anything your mind comes up with at random.</p>
         </div>
     </section>
-    <div class="formcontainer">
-        <div class="center bg-blue formbox">
+    <section class="formcontainer center">
+        <div class="formbox center bg-blue">
             <form id="image-form">
                 <div class="mb-5px mt-2">
-                    <label class="white" for="prompt" id="prompt">Prompt</label>
+                    <label class="mb-2 white" for="prompt" id="prompt">Prompt</label>
                 </div>
                 <div class="mb-2">
                     <textarea id="prompt "name="prompt" cols="35" rows="4" placeholder="Anything that comes to mind, type here to see the magic!"></textarea>
                 </div>
-                <div class="mb-2">
+                <div class="mb-2 center">
                     <label class="white" for="size" id="size">Size</label>
-                    <select name="size" id="size">
+                    <select class="ml-1" name="size" id="size">
                         <option value="small">Small</option>
                         <option value="medium">Medium</option>
                         <option value="large">Large</option>
                     </select>    
                 </div>
-                <div class="mb-2">
+                <div class="mb-2 center">
                     <button type="submit" role="button">Generate Image</button>
                 </div>
             </form>
         </div>
-    </div>
+    </section>
     <section class="generated-image bg-blue">
-        <div class="image-container">
+        <!-- <div class="image-container">
             <h2 id="err-message"></h2>
             <img src="" alt="" id="image">
-        </div>
+        </div> -->
         <!-- <div class="spinner"></div> -->
     </section>
 </body>

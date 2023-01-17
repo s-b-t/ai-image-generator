@@ -152,7 +152,7 @@ a:hover {
     transition-timing-function: ease-out;
 }
 
-section {
+.info {
     position: relative;
     padding: 75px 100px;
     /* background: linear-gradient(to bottom, transparent 100%, #054B73 10%) */
@@ -171,6 +171,14 @@ section h2 {
     margin-bottom: 2vw;
 }
 
+.mb-1 {
+    margin-bottom: 1vw;
+}
+
+.ml-1 {
+    margin-left: 1vw;
+}
+
 .mb-5px {
     margin-bottom: 5px;
 }
@@ -185,10 +193,9 @@ section h2 {
 
 .formcontainer {
     background-color: #054B73;
-    height: 50vh;
+    height: 80vh;
     width: 100vw;
-    padding-top: 75px;
-    padding-bottom: 75px;
+    /* padding: 75px 100px; */
 }
 
 .bg-blue {
@@ -196,9 +203,12 @@ section h2 {
 }
 
 .formbox {
-    margin-left: 250px;
-    margin-right: 250px;
+    /* margin-left: 250px;
+    margin-right: 250px;  */
+    margin-top: 4.75vw;
+    height: 50vh;
     border: solid yellow 2px;
+    padding: 30px;
 }
 
 ::placeholder {
@@ -283,7 +293,7 @@ button:focus {
     padding-top: 75px;
 } */
 
-.image-container {
+.image-container { 
     margin-left: 250px;
     margin-right: 250px;
     margin-bottom: 75px;
