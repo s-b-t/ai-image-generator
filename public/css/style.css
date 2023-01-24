@@ -193,7 +193,7 @@ section h2 {
 
 .formcontainer {
     background-color: #054B73;
-    height: 80vh;
+    height: 540px;
     width: 100vw;
     /* padding: 75px 100px; */
 }
@@ -205,9 +205,17 @@ section h2 {
 .formbox {
     /* margin-left: 250px;
     margin-right: 250px;  */
-    margin-top: 4.75vw;
-    height: 50vh;
+    /* margin-top: 4.75vw; */
+    margin-left: 250px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-right: 250px;
+    height: 330px;
     border: solid yellow 2px;
+    /* border-top: groove yellow 18.75px;
+    border-left: ridge yellow 37.5px;
+    border-right: groove yellow 37.5px;
+    border-bottom: ridge yellow 75px; */
     padding: 30px;
 }
 
@@ -295,18 +303,22 @@ button:focus {
 
 .image-container { 
     margin-left: 250px;
+    margin-top: 100px;
+    margin-bottom: 100px;
     margin-right: 250px;
-    margin-bottom: 75px;
-    /* border: solid yellow 2px; */
-}
-
-#image {
-    display: block;
-    margin: auto;
+    background-color: #054B73;
+    height: 30vh;
+    width: 50vw;
+    border: solid yellow 2px;
 }
 
 #err-message {
     font-size: 1.6rem;
     text-align: center;
     margin-top: 1rem;
+}
+
+#image {
+    display: block;
+    /* margin: auto; */
 }
