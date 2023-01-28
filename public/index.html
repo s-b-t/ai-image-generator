@@ -58,15 +58,15 @@
     </section>
     <section class="formcontainer center align-center">
         <div class="formbox center align-center bg-blue">
-            <form id="image-form">
+            <form id="image-form" method="POST">
                 <div class="mb-5px mt-2">
                     <label class="mb-2 white" for="prompt">Prompt</label>
                 </div>
                 <div class="mb-2">
-                    <textarea id="prompt "name="prompt" cols="35" rows="4" placeholder="Anything that comes to mind, type here to see the magic!"></textarea>
+                    <textarea id="prompt" name="prompt" cols="35" rows="4" placeholder="Anything that comes to mind, type here to see the magic!"></textarea>
                 </div>
                 <div class="mb-2 center">
-                    <label class="white" for="size" id="size">Size</label>
+                    <label class="white" for="size">Size</label>
                     <select class="ml-1" name="size" id="size">
                         <option value="small">Small</option>
                         <option value="medium">Medium</option>

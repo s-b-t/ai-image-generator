@@ -17,8 +17,6 @@ function onSubmit(e) {
         return;
     }
 
-    console.log(prompt, size);
-
     generateImageRequest(prompt, size);
 
     console.log(prompt, size);
