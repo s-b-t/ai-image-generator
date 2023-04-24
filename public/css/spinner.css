@@ -94,19 +94,21 @@
     position: relative;
     width: 48px;
     height: 48px;
-    background: #054B73;
+    /* background: #042E4B; */
+    background: #042E4B;
     transform: rotateX(65deg) rotate(45deg);
     transform: perspective(200px) rotateX(65deg) rotate(45deg);
     color: yellow;
-    animation: layers1 1.125s linear infinite alternate;
+    animation: layers1 .65s linear infinite alternate;
 }
 
 .spinner:after {
     content: '';
     position: absolute;
     inset: 0;
-    background: rgba(255, 255, 255, 0.7);
-    animation: layerTr .75s linear infinite alternate;
+    background: white;
+    /* background: white; */
+    animation: layerTr .65s linear infinite alternate;
 }
 
 @keyframes layers1 {
